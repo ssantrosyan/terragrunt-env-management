@@ -4,7 +4,7 @@ generate "backend" {
   contents  = <<EOF
 terraform {
     backend "s3" {
-        bucket  = "terraform-environment"
+        bucket  = "terraformenvironment"
         key     = "${path_relative_to_include()}/terraform.tfstate"
         region  = "eu-west-2"
     }
