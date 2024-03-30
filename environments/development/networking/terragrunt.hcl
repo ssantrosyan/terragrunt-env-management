@@ -16,4 +16,6 @@ inputs = {
   internet_gateway     = "igw-development"
   nat_gateway          = "nat-gw-developmet"
   nat_eip              = "nat-ip-development"
+  public_subnets_name  = ["development-priv-2a", "development-priv-2b", "development-priv-2c"]
+  private_subnets_name = ["development-pub-2a", "development-pub-2b", "development-pub-2c"]
 }
