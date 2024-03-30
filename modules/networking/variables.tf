@@ -15,7 +15,7 @@ variable "vpc_name" {
 
 variable "public_subnets_cidr" {
   description = "Provider public subnets CIDR values"
-  type        = map(any)
+  type        = list(any)
 }
 
 variable "public_subnets_name" {
@@ -25,7 +25,7 @@ variable "public_subnets_name" {
 
 variable "private_subnets_cidr" {
   description = "Provide private subnets CIDR values"
-  type        = map(any)
+  type        = list(any)
 }
 
 variable "private_subnets_name" {
