@@ -20,7 +20,7 @@ variable "public_subnets_cidr" {
 
 variable "public_subnets_name" {
   description = "Public Subnets Name"
-  type        = string
+  type        = list(any)
 }
 
 variable "private_subnets_cidr" {
@@ -30,7 +30,7 @@ variable "private_subnets_cidr" {
 
 variable "private_subnets_name" {
   description = "Privet Subnets Name"
-  type        = string
+  type        = list(any)
 }
 
 variable "availability_zones" {

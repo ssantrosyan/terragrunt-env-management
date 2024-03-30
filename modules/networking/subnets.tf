@@ -7,7 +7,7 @@ resource "aws_subnet" "public_subnet" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "${element(var.public_subnets_name, count.index)}-${terraform.workspace}"
+    Name = "${element(var.public_subnets_name, count.index)}"
   }
 }
 
@@ -19,6 +19,6 @@ resource "aws_subnet" "private_subnet" {
   availability_zone = element(var.availability_zones, count.index)
 
   tags = {
-    Name = "${element(var.private_subnets_name, count.index)}-${terraform.workspace}"
+    Name = "${element(var.private_subnets_name, count.index)}"
   }
 }
